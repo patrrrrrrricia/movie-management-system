@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/png" th:href="@{/images/director.png}">
+    <title>02.05.b - Comparare Durata</title>
+</head>
+<body>
+<div class="container">
+    <h2>02.05.b - Comparare Durata</h2>
+    <div class="student-info">Filme mai scurte decat filmul dat</div>
+    <form th:action="@{/executa-25b}" method="get">
+        <input type="text" name="titlu" placeholder="Titlu film (ex: Die Another Day)" required
+               style="padding: 12px; width: 80%; border-radius: 10px; border: 1px solid #ffccd5; margin-bottom: 10px;">
+        <input type="number" name="an" placeholder="Anul (ex: 2002)" required
+               style="padding: 12px; width: 80%; border-radius: 10px; border: 1px solid #ffccd5; margin-bottom: 20px;">
+        <button type="submit" class="btn-table" style="width: 100%;">Compara</button>
+    </form>
+    <br>
+    <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60;">Inapoi</a>
+</div>
+</body>
+</html>

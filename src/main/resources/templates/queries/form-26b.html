@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/png" th:href="@{/images/director.png}">
+    <title>02.06.b - Statistici</title>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${titlu}">Statistici Castiguri Detaliate</h2>
+
+    <div style="background: white; padding: 25px; border-radius: 15px; border: 1px solid #ffccd5; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px;">
+
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+            <tr style="background-color: #ff8fa3; color: white;">
+                <th style="padding: 12px; border-radius: 10px 0 0 0; text-align: center;">Tip Statistica</th>
+                <th style="padding: 12px; border-radius: 0 10px 0 0; text-align: center;">Valoare Castig Net</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="border-bottom: 1px solid #fce4ec;">
+                <td style="padding: 15px; color: #4a4a4a;"><strong>Castig MINIM</strong></td>
+                <td style="padding: 15px; text-align: center; color: #d81b60; font-weight: bold;" th:text="${minim} + ' EUR'">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #fce4ec; background-color: #fff5f7;">
+                <td style="padding: 15px; color: #4a4a4a;"><strong>Castig MEDIU</strong></td>
+                <td style="padding: 15px; text-align: center; color: #d81b60; font-weight: bold;" th:text="${mediu} + ' EUR'">0</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; color: #4a4a4a;"><strong>Castig MAXIM</strong></td>
+                <td style="padding: 15px; text-align: center; color: #d81b60; font-weight: bold;" th:text="${maxim} + ' EUR'">0</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+        <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60; text-decoration: none; padding: 10px 25px; border-radius: 20px; font-weight: bold; display: inline-block;">
+            Inapoi la Meniu
+        </a>
+    </div>
+</div>
+</body>
+</html>

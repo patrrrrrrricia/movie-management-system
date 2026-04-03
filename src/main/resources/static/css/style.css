@@ -1,0 +1,119 @@
+/* fisier de stiluri pentru aspectul aplicatiei */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f7; /* fundal roz pal pentru intreaga pagina */
+    color: #4a4a4a;
+    margin: 0;
+    /* centrarea continutului pe mijlocul ecranului */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px; /* colturi rotunjite pentru cutia principala */
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3); /* umbra rozalie pentru efect 3d */
+    width: 100%;
+    max-width: 650px;
+    border: 1px solid #ffe4e8;
+}
+
+h1 {
+    color: #d81b60; /* culoare roz inchis pentru titlul principal */
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-info {
+    text-align: center;
+    color: #ad1457;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #fce4ec; /* linie de separare sub numele studentului */
+    padding-bottom: 1rem;
+}
+
+.menu-list {
+    list-style: none; /* elimina punctele din lista de meniu */
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 12px;
+    transition: transform 0.2s; /* durata animatiei la miscare */
+}
+
+/* efect de deplasare la dreapta cand pui mouse-ul pe un element din meniu */
+.menu-item:hover {
+    transform: translateX(10px);
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #4a4a4a;
+    display: block;
+    padding: 12px 20px;
+    background-color: #fff0f3;
+    border-radius: 12px;
+    border-left: 5px solid #ff80ab; /* dunga roz mai groasa in stanga butonului */
+    font-weight: 500;
+}
+
+/* schimbarea culorii butonului cand este selectat cu mouse-ul */
+.menu-item a:hover {
+    background-color: #ff80ab;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #f06292;
+}
+
+.table-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #fce4ec; /* linie intrerupta pentru separarea butoanelor de jos */
+}
+
+.table-actions h3 {
+    font-size: 0.9rem;
+    color: #ff8fa3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.horizontal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* permite butoanelor sa treaca pe randul nou daca nu au loc */
+}
+
+.btn-table {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #d81b60;
+    padding: 10px 18px;
+    border-radius: 50px; /* butoane ovale */
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* efect de ridicare si umbra pentru butoanele de jos la hover */
+.btn-table:hover {
+    background-color: #e19eaf;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+}

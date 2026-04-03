@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Rezultat</title>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${titlu}">Rezultate</h2>
+
+    <div style="background: white; padding: 25px; border-radius: 15px; border: 1px solid #ffccd5; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+            <tr style="background-color: #ff8fa3; color: white;">
+                <th th:if="${titlu.contains('STUDIO')}" style="padding: 12px; border-radius: 10px 0 0 0;">Nume Studio</th>
+                <th th:if="${titlu.contains('STUDIO')}" style="padding: 12px; border-radius: 0 10px 0 0;">Adresa</th>
+
+                <th th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px; border-radius: 10px 0 0 0;">ID Actor</th>
+                <th th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px;">Titlu Film</th>
+                <th th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px; border-radius: 0 10px 0 0;">An Film</th>
+
+                <th th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px; border-radius: 10px 0 0 0;">Nume Complet</th>
+                <th th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px;">Email</th>
+                <th th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px; border-radius: 0 10px 0 0;">Sex</th>
+
+                <th th:if="${titlu.contains('Statistici actori')}" style="padding: 12px; border-radius: 10px 0 0 0;">Nume Actor</th>
+                <th th:if="${titlu.contains('Statistici actori')}" style="padding: 12px; border-radius: 0 10px 0 0;">Numar Filme</th>
+
+                <th th:if="${titlu.contains('Perechi')}" style="padding: 12px; border-radius: 10px 0 0 0;">ID Actor 1</th>
+                <th th:if="${titlu.contains('Perechi')}" style="padding: 12px; border-radius: 0 10px 0 0;">ID Actor 2</th>
+
+                <th th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px; border-radius: 10px 0 0 0;">Titlu Film</th>
+                <th th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px;">An</th>
+                <th th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px; border-radius: 0 10px 0 0;">Gen/Durata</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${lista}" style="border-bottom: 1px solid #fce4ec;">
+                <td th:if="${titlu.contains('STUDIO')}" style="padding: 12px;" th:text="${item.nume}"></td>
+                <td th:if="${titlu.contains('STUDIO')}" style="padding: 12px;" th:text="${item.adresa}"></td>
+
+                <td th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px; text-align: center;" th:text="${item.idActor}"></td>
+                <td th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px;" th:text="${item.titluFilm}"></td>
+                <td th:if="${titlu.contains('DISTRIBUTIE')}" style="padding: 12px; text-align: center;" th:text="${item.anFilm}"></td>
+
+                <td th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px;" th:text="${item.nume}"></td>
+                <td th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px;" th:text="${item.email}"></td>
+                <td th:if="${titlu.contains('Persoane') || titlu.contains('PERSOANA')}" style="padding: 12px; text-align: center;" th:text="${item.sex}"></td>
+
+                <td th:if="${titlu.contains('Statistici actori')}" style="padding: 12px;" th:text="${item[0]}"></td>
+                <td th:if="${titlu.contains('Statistici actori')}" style="padding: 12px; text-align: center; font-weight: bold;" th:text="${item[1]}"></td>
+
+                <td th:if="${titlu.contains('Perechi')}" style="padding: 12px; text-align: center;" th:text="${item[0]}"></td>
+                <td th:if="${titlu.contains('Perechi')}" style="padding: 12px; text-align: center;" th:text="${item[1]}"></td>
+
+                <td th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px; font-weight: bold;" th:text="${item.titlu}"></td>
+                <td th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px; text-align: center;" th:text="${item.an}"></td>
+                <td th:if="${!titlu.contains('Persoane') && !titlu.contains('PERSOANA') && !titlu.contains('Perechi') && !titlu.contains('Statistici actori') && !titlu.contains('STUDIO') && !titlu.contains('DISTRIBUTIE')}"
+                    style="padding: 12px; text-align: center;" th:text="${item.gen} + ' (' + ${item.durata} + ' min)'"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60; text-decoration: none; padding: 10px 25px; border-radius: 20px; font-weight: bold;">Inapoi la Meniu</a>
+    </div>
+</div>
+</body>
+</html>

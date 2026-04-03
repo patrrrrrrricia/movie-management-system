@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/png" th:href="@{/images/director.png}">
+    <title>02.04.b - Perechi Actori</title>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${titlu}">Perechi Actori</h2>
+    <div class="student-info">Perechi (ID1, ID2) de sex diferit in acelasi film</div>
+
+    <table class="result-table" style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+        <thead>
+        <tr style="background-color: #ff8fa3; color: white;">
+            <th style="padding: 10px;">ID Actor 1</th>
+            <th style="padding: 10px;">ID Actor 2</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="pereche : ${lista}" style="border-bottom: 1px solid #ffe1e6;">
+            <td style="padding: 10px; text-align: center;" th:text="${pereche[0]}">ID1</td>
+            <td style="padding: 10px; text-align: center;" th:text="${pereche[1]}">ID2</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60;">Inapoi la Meniu</a>
+</div>
+</body>
+</html>

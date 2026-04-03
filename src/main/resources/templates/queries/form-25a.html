@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/png" th:href="@{/images/director.png}">
+    <title>02.05.a - Rezultat</title>
+</head>
+<body>
+<div class="container">
+    <h2>Presedintele cu castig maxim</h2>
+    <div style="background: white; padding: 30px; border-radius: 15px; border: 2px dashed #ffccd5; margin-top: 20px;">
+        <p style="font-size: 1.5rem; color: #d81b60;">
+            Numele este: <strong th:text="${numePresedinte}">Nume</strong>
+        </p>
+    </div>
+    <br>
+    <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60;">Inapoi la Meniu</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/png" th:href="@{/images/director.png}">
+    <title>02.04.a - Actor si Producator</title>
+</head>
+<body>
+<div class="container">
+    <h2>02.04.a - Actor si Producator</h2>
+    <div class="student-info">Cautare filme unde persoana este si actor si producator</div>
+    <form th:action="@{/executa-24a}" method="get">
+        <input type="text" name="numeActor" placeholder="Nume actor (ex: Toby Stephens)" required
+               style="padding: 12px; width: 80%; border-radius: 10px; border: 1px solid #ffccd5; margin-bottom: 20px;">
+        <button type="submit" class="btn-table" style="width: 100%;">Cauta Filme</button>
+    </form>
+    <br>
+    <a th:href="@{/}" class="btn-table" style="background-color: #fce4ec; color: #d81b60;">Inapoi</a>
+</div>
+</body>
+</html>
