@@ -10,6 +10,12 @@ A bespoke management ecosystem tailored for the elite cinematic industry. This p
 * **Frontend:** HTML5, CSS3, Thymeleaf Templates
 * **Database:** MySQL
 
+![Java](https://img.shields.io/badge/java-17+-%23FF69B4.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-%23FFB6C1.svg?style=for-the-badge&logo=spring&logoColor=black) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-%23FF69B4.svg?style=for-the-badge&logo=hibernate&logoColor=white)
+
+![HTML5](https://img.shields.io/badge/HTML5-%234F4F4F.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-%234F4F4F.svg?style=for-the-badge&logo=css3&logoColor=white) ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%234F4F4F.svg?style=for-the-badge&logo=thymeleaf&logoColor=white)
+
+![MySQL](https://img.shields.io/badge/MySQL-%23333333.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
 ---
 
 ## 🎀 Core Functionality
