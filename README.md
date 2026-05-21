@@ -37,7 +37,8 @@ The project follows a standard Spring Boot layered architecture:
 
 ---
 
-## 🏛️ Project Architecture (Module Overview)
+## Visual Documentation
+
 | Architecture Component |
 | :---: |
 | <div align="center"> <img width="400" alt="Architecture" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2" /> </div> |
