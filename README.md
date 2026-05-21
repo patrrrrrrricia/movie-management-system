@@ -40,25 +40,16 @@ The project follows a standard Spring Boot layered architecture:
 ---
 
 ## Visual Documentation
-| Layered Architecture |
-| :---: |
-| <div align="center"> 
-  <img width="600" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/6e7e9e99-8fe2-4ad7-a34f-265c27368759"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/5d6c7e92-5ab0-4cde-82f3-72495facbeeb"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/911e3e61-c4c0-49f7-abae-07c53f8e3283"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/9ad85c40-3b81-4cce-8139-148a3dd1f7b8"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/13c25dda-f454-46ff-838f-0df7a72edb5c"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/2acf008a-3f32-4d81-8045-07ced65f6272"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/51f4fd74-8a65-472e-90be-538c849899e0"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/a43995dd-8540-4777-afc0-baa995f6e961"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/abdef7f5-de47-44e3-ac9c-40a31bf5784b"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/db474d09-3340-46d0-a904-a41d3ba6f31c"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/97bd3fdd-4f04-442d-9dbd-a45fc6163535"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/8ae4781a-f56f-4f66-a696-2cebbc2bdc6e"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/170ecbb9-9650-4cce-a6e8-1a2fa4588135"> <br><br>
-  <img width="600" src="https://github.com/user-attachments/assets/c1af61ec-408a-4e53-92ba-0bf18f3acdb0"> 
-</div> |
+| Columna 1 | Columna 2 |
+| :---: | :---: |
+| <img width="300" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2"> | <img width="300" src="https://github.com/user-attachments/assets/6e7e9e99-8fe2-4ad7-a34f-265c27368759"> |
+| <img width="300" src="https://github.com/user-attachments/assets/5d6c7e92-5ab0-4cde-82f3-72495facbeeb"> | <img width="300" src="https://github.com/user-attachments/assets/911e3e61-c4c0-49f7-abae-07c53f8e3283"> |
+| <img width="300" src="https://github.com/user-attachments/assets/9ad85c40-3b81-4cce-8139-148a3dd1f7b8"> | <img width="300" src="https://github.com/user-attachments/assets/13c25dda-f454-46ff-838f-0df7a72edb5c"> |
+| <img width="300" src="https://github.com/user-attachments/assets/2acf008a-3f32-4d81-8045-07ced65f6272"> | <img width="300" src="https://github.com/user-attachments/assets/51f4fd74-8a65-472e-90be-538c849899e0"> |
+| <img width="300" src="https://github.com/user-attachments/assets/a43995dd-8540-4777-afc0-baa995f6e961"> | <img width="300" src="https://github.com/user-attachments/assets/abdef7f5-de47-44e3-ac9c-40a31bf5784b"> |
+| <img width="300" src="https://github.com/user-attachments/assets/db474d09-3340-46d0-a904-a41d3ba6f31c"> | <img width="300" src="https://github.com/user-attachments/assets/97bd3fdd-4f04-442d-9dbd-a45fc6163535"> |
+| <img width="300" src="https://github.com/user-attachments/assets/8ae4781a-f56f-4f66-a696-2cebbc2bdc6e"> | <img width="300" src="https://github.com/user-attachments/assets/170ecbb9-9650-4cce-a6e8-1a2fa4588135"> |
+| <img width="300" src="https://github.com/user-attachments/assets/c1af61ec-408a-4e53-92ba-0bf18f3acdb0"> | *(Spațiu liber)* |
 
 ---
 
