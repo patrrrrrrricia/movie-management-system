@@ -36,11 +36,14 @@ The project follows a standard Spring Boot layered architecture:
 * **Services**: Contain the core logic for advanced queries and statistics.
 
 ---
-<div align="center">
-<img width="462" height="481" alt="image" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2" />
-</div>
+
+## 🏛️ Project Architecture (Module Overview)
+| Architecture Component |
+| :---: |
+| <div align="center"> <img width="400" alt="Architecture" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2" /> </div> |
 
 ---
+
 ## 🛠️ Getting Started
 
 Follow these instructions to set up the database, configure the environment, and launch the application:
