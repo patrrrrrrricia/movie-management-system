@@ -48,28 +48,4 @@ The project follows a standard Spring Boot layered architecture:
 
 ---
 
-## 🛠️ Getting Started
-
-Follow these instructions to set up the database, configure the environment, and launch the application:
-
-```bash
-# 1. Database Setup
-# Import the SQL script to initialize the schema and data
-mysql -u your_username -p your_database_name < path/to/setup_script.sql
-
-# 2. Configuration
-# Update src/main/resources/application.properties with your credentials:
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-
-# 3. Execution
-# Run the application using the Maven wrapper
-./mvnw spring-boot:run
-
-# The application will be available at: http://localhost:8080
-```
----
-
 © 2026 Movie Analytics Platform | Developed by [**𝐋𝐞𝐨𝐧𝐭𝐞 𝐏𝐚𝐭𝐫𝐢𝐜𝐢𝐚-𝐌𝐢𝐫𝐚𝐛𝐞𝐥𝐚**](https://patrrrrrrricia.github.io/glowing-button/)
