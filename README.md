@@ -38,7 +38,7 @@ The project follows a standard Spring Boot layered architecture:
 ---
 
 ## Visual Documentation
-| C 1 | C 2 | C 3 |
+
 | :---: | :---: | :---: |
 | <img width="250" src="https://github.com/user-attachments/assets/35e633da-695d-4e89-af7a-b43d733fd0b2"> | <img width="250" src="https://github.com/user-attachments/assets/6e7e9e99-8fe2-4ad7-a34f-265c27368759"> | <img width="250" src="https://github.com/user-attachments/assets/5d6c7e92-5ab0-4cde-82f3-72495facbeeb"> |
 | <img width="250" src="https://github.com/user-attachments/assets/911e3e61-c4c0-49f7-abae-07c53f8e3283"> | <img width="250" src="https://github.com/user-attachments/assets/9ad85c40-3b81-4cce-8139-148a3dd1f7b8"> | <img width="250" src="https://github.com/user-attachments/assets/13c25dda-f454-46ff-838f-0df7a72edb5c"> |
