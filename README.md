@@ -9,7 +9,7 @@ A bespoke management ecosystem tailored for the elite cinematic industry. This p
 * **Backend:** Java 17+, Spring Boot, Spring Data JPA (Hibernate)
 * **Frontend:** HTML5, CSS3, Thymeleaf Templates
 * **Database:** MySQL
-* 
+  
 ![Java](https://img.shields.io/badge/java-17+-ECCACB.svg?style=for-the-badge&logo=openjdk&logoColor=3B3B3B) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-FCFAFA.svg?style=for-the-badge&logo=spring&logoColor=3B3B3B) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-ECCACB.svg?style=for-the-badge&logo=hibernate&logoColor=3B3B3B)
 
 ![HTML5](https://img.shields.io/badge/HTML5-3B3B3B.svg?style=for-the-badge&logo=html5&logoColor=FCFAFA) ![CSS3](https://img.shields.io/badge/CSS3-3B3B3B.svg?style=for-the-badge&logo=css3&logoColor=FCFAFA) ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3B3B3B.svg?style=for-the-badge&logo=thymeleaf&logoColor=FCFAFA)
